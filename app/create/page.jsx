@@ -30,15 +30,15 @@ const page = () => {
     // }
   };
 
-  useEffect(() => {
-    if (status === "authenticated") {
-      async function fetchRateLimit() {
-        const rateLimit = await getRateLimit(session.user.id);
-        setRateLimit(rateLimit);
-      }
-      fetchRateLimit();
-    }
-  }, [session, status]);
+  // useEffect(() => {
+  //   if (status === "authenticated") {
+  //     async function fetchRateLimit() {
+  //       const rateLimit = await getRateLimit(session.user.id);
+  //       setRateLimit(rateLimit);
+  //     }
+  //     fetchRateLimit();
+  //   }
+  // }, [session, status]);
 
   const timeRemaining = () => {
     const oneHour = 3600000;
