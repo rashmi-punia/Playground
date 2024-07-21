@@ -19,15 +19,15 @@ const page = () => {
   const handleCreate = async (e) => {
     e.preventDefault();
 
-    try {
-      const res = await axios.post("api/create", {
-        prompt: prompt,
-        userId: session?.user.id,
-      });
-      setImageUrl(res.data.image);
-    } catch (error) {
-      console.error("Error generating image:", error);
-    }
+    // try {
+    //   const res = await axios.post("api/create", {
+    //     prompt: prompt,
+    //     userId: session?.user.id,
+    //   });
+    //   setImageUrl(res.data.image);
+    // } catch (error) {
+    //   console.error("Error generating image:", error);
+    // }
   };
 
   useEffect(() => {
