@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+/* 
+body {
+  color: rgb(var(--foreground-rgb));
+  } */
+  
+  body {
+    color: aliceblue;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+
+
+  /* background: conic-gradient(
+    from 181.27deg at 48.5% 50%,
+    #484848 -50.4deg,
+    #262626 64.8deg,
+    #000000 129.6deg,
+    #5b5b5b 216deg,
+    rgba(0, 0, 0, 0.95) 266.4deg,
+    #484848 309.6deg,
+    #262626 424.8deg
+  ); */
+}
+
+.dropdown {
+  @apply absolute right-0 top-full mt-3 *:p-3 overflow-hidden  rounded-lg text-black bg-white min-w-[210px] max-w-[250px] flex flex-col gap-1 justify-end items-end;
+}
+
+.dropdown_link {
+  @apply hover:bg-gray-100 w-full text-end   font-medium;
+}
+
+@layer utilities {
+  h1 {
+    @apply text-7xl font-bold;
+  }
+  h3 {
+    @apply text-xl tracking-wide py-2;
+  }
+
+  .main{
+    
+  background: conic-gradient(
+    from 181.27deg at 48.5% 50%,
+    #484848 -50.4deg,
+    #262626 64.8deg,
+    #000000 129.6deg,
+    #5b5b5b 216deg,
+    rgba(0, 0, 0, 0.95) 266.4deg,
+    #484848 309.6deg,
+    #262626 424.8deg )
+  }
+
+
+  .button-gradient {
+    background: conic-gradient(
+      from 165deg at 50% 50%,
+      #f1c6dd 0deg,
+      #d9b5e3 25.03deg,
+      #c1a4e8 50.06deg,
+      #b8e2fb 85.94deg,
+      #f2efe8 134.97deg,
+      #f9dcdd 172.05deg,
+      #e1c1e5 200.75deg,
+      #bdafe3 224.67deg,
+      #c7edeb 259.36deg,
+      #e7f5eb 298.82deg,
+      #f2f0e7 328.72deg,
+      #ddc1e1 360deg
+    );
+    @apply py-4 px-6 hover:animate-pulse mt-8  text-neutral-950 font-bold rounded-lg;
+  }
+  .create {
+    font-family: "Julius Sans One";
+  }
+
+}

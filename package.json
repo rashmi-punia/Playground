@@ -9,10 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^5.16.4",
     "@vercel/kv": "^2.0.0",
+    "axios": "^1.7.2",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "framer-motion": "^11.3.8",
     "next": "14.2.5",
+    "next-auth": "^4.24.7",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-icons": "^5.2.1",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "postcss": "^8",
